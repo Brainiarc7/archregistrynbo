@@ -9,10 +9,15 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
+from os.path import dirname, join
+
+PROJECT_DIR = dirname(__file__)
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '/home/aorth/src/git/archregistry/archregistry.db',                      # Or path to database file if using sqlite3.
+        'NAME': join(PROJECT_DIR, 'archregistry.db'),                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
