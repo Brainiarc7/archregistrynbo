@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>Hipster Arch Users</title>
+  </head>
+  <body>
+    <ul>
+      {% for object in object_list %} {# note: object_list being the archuser's #}
+        <li>{{ object.name }} - {{ object.nick }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
