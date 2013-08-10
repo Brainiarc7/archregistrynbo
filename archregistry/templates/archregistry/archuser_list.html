@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Hipster Arch Users</title>
+  </head>
+  <body>
+    {% if object_list %} {# note: object_list being the archuser's <-- this = a comment #}
+      <ul>
+        <h1>Hipster Arch Users</h1>
+        {% for object in object_list %}
+          <li>{{ object.name }} - {{ object.nick }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      I ♥ Arch Linux
+    {% endif %}
+  </body>
+</html>
