@@ -1,6 +1,6 @@
 from django.views.generic import ListView
 
-from archregistry.views import ArchUser
+from archregistry.models import ArchUser
 
 
 class ArchUserListView(ListView):
